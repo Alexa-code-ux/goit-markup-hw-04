@@ -60,6 +60,8 @@ img {
 /* header */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -73,6 +75,8 @@ img {
   display: block;
   padding: 24px 0;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 .header-nav-item:hover,
 .header-nav-item:focus {
@@ -145,6 +149,12 @@ img {
 }
 /* section effective solutions */
 .section-one {
+  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   align-items: center;
   text-align: center;
   padding: 188px 0px;
@@ -201,7 +211,7 @@ img {
   background: #404bbf;
 }
 /* section strategy */
-.visually-hidden{
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -213,12 +223,47 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.icons {
+  text-align: center;
+  padding-bottom: 24px;
+}
+/* section our team */
 .section-two-list {
   display: flex;
   gap: 24px;
 }
+.icons-list {
+  display: flex;
+  gap: 12px;
+  /* расстояние между иконками */
+  justify-content: space-around;
+  /* по желанию */
+  padding: 0;
+  margin-top: 8px;
+}
+.icons-spec {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-spec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-spec:hover,
+.icon-spec:focus {
+  background-color: #404bbf;
+}
+
 .advantages {
-  width: calc((100% - 72px) /4);
+  width: calc((100% - 72px) / 4);
 }
 .section-two-title {
   margin-bottom: 8px;
@@ -339,4 +384,42 @@ img {
   color: #f4f4fd;
   letter-spacing: 0.02em;
   width: 264px;
+}
+.par-network {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.icons-footer {
+  display: flex;
+  gap: 16px;
+}
+.icon-footer {
+  width: 40px;
+  height: 40px;
+}
+.media-icons {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.media-icons:hover,
+.media-icons:focus {
+  background-color: #31d0aa;
+}
+.icons-svg-footer {
+  fill: var(--color3, #f4f4fd);
+}
+.social-network-footer {
+  width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
