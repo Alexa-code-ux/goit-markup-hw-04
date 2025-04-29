@@ -82,7 +82,7 @@ img {
 .header-nav-item {
   display: block;
   padding: 24px 0;
-  color: #2e2f42;
+  color: #404bbf;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
@@ -502,4 +502,7 @@ img {
   padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
+}
+.section-four-item:hover .overlay-text {
+  transform: translateY(0%);
 }
