@@ -86,7 +86,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
-.header-nav-item::after {
+.header-nav-item-studio::after {
   content: "";
   position: absolute;
   left: 0;
@@ -233,7 +233,8 @@ img {
 }
 /* section strategy */
 .section {
-  margin-top: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .visually-hidden {
   position: absolute;
